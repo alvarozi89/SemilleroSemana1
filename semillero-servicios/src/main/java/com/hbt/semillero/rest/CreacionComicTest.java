@@ -19,7 +19,7 @@ public class CreacionComicTest {
 		comic1.setColeccion("MARVEL COMICS");
 		comic1.setColor(true);
 		comic1.setEditorial("panini comics");
-		comic1.setEstado(EstadoEnum.INACTIVO);
+		comic1.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic1.setFechaVenta(LocalDate.parse(date));
 		comic1.setId(new Long(1));
 		comic1.setNombre("VENOM");
@@ -35,7 +35,7 @@ public class CreacionComicTest {
 		comic2.setColeccion("MARVEL COMICS");
 		comic2.setColor(true);
 		comic2.setEditorial("panini comics");
-		comic2.setEstado(EstadoEnum.ACTIVO);
+		comic2.setEstadoEnum(EstadoEnum.ACTIVO);
 		comic2.setFechaVenta(LocalDate.parse(date));
 		comic2.setId(new Long(2));
 		comic2.setNombre("CAPITAN AMERICA");
@@ -52,7 +52,7 @@ public class CreacionComicTest {
 		comic3.setColeccion("MARVEL COMICS");
 		comic3.setColor(true);
 		comic3.setEditorial("panini comics");
-		comic3.setEstado(EstadoEnum.ACTIVO);
+		comic3.setEstadoEnum(EstadoEnum.ACTIVO);
 		comic3.setFechaVenta(LocalDate.parse(date));
 		comic3.setId(new Long(3));
 		comic3.setNombre("IRON MAN");
@@ -68,7 +68,7 @@ public class CreacionComicTest {
 		comic4.setColeccion("MARVEL COMICS");
 		comic4.setColor(true);
 		comic4.setEditorial("panini comics");
-		comic4.setEstado(EstadoEnum.ACTIVO);
+		comic4.setEstadoEnum(EstadoEnum.ACTIVO);
 		comic4.setFechaVenta(LocalDate.parse(date));
 		comic4.setId(new Long(4));
 		comic4.setNombre("DOCTOR EXTRAÑO");
@@ -84,7 +84,7 @@ public class CreacionComicTest {
 		comic5.setColeccion("MARVEL COMICS");
 		comic5.setColor(true);
 		comic5.setEditorial("panini comics");
-		comic5.setEstado(EstadoEnum.ACTIVO);
+		comic5.setEstadoEnum(EstadoEnum.ACTIVO);
 		comic5.setFechaVenta(LocalDate.parse(date));
 		comic5.setId(new Long(5));
 		comic5.setNombre("LA BRUJA ESCARLATA");
@@ -100,7 +100,7 @@ public class CreacionComicTest {
 		comic6.setColeccion("MARVEL COMICS");
 		comic6.setColor(true);
 		comic6.setEditorial("panini comics");
-		comic6.setEstado(EstadoEnum.INACTIVO);
+		comic6.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic6.setFechaVenta(LocalDate.parse(date));
 		comic6.setId(new Long(6));
 		comic6.setNombre("LOS 4 FANTASTICOS");
@@ -115,7 +115,7 @@ public class CreacionComicTest {
 		comic7.setColeccion("MARVEL COMICS");
 		comic7.setColor(true);
 		comic7.setEditorial("panini comics");
-		comic7.setEstado(EstadoEnum.INACTIVO);
+		comic7.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic7.setFechaVenta(LocalDate.parse(date));
 		comic7.setId(new Long(7));
 		comic7.setNombre("WOLVERINE");
@@ -130,7 +130,7 @@ public class CreacionComicTest {
 		comic8.setColeccion("MARVEL COMICS");
 		comic8.setColor(true);
 		comic8.setEditorial("panini comics");
-		comic8.setEstado(EstadoEnum.INACTIVO);
+		comic8.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic8.setFechaVenta(LocalDate.parse(date));
 		comic8.setId(new Long(8));
 		comic8.setNombre("X MEN");
@@ -145,7 +145,7 @@ public class CreacionComicTest {
 		comic9.setColeccion("MARVEL COMICS");
 		comic9.setColor(true);
 		comic9.setEditorial("panini comics");
-		comic9.setEstado(EstadoEnum.INACTIVO);
+		comic9.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic9.setFechaVenta(LocalDate.parse(date));
 		comic9.setId(new Long(9));
 		comic9.setNombre("EL ALCON");
@@ -160,7 +160,7 @@ public class CreacionComicTest {
 		comic10.setColeccion("MARVEL COMICS");
 		comic10.setColor(true);
 		comic10.setEditorial("panini comics");
-		comic10.setEstado(EstadoEnum.INACTIVO);
+		comic10.setEstadoEnum(EstadoEnum.INACTIVO);
 		comic10.setFechaVenta(LocalDate.parse(date));
 		comic10.setId(new Long(10));
 		comic10.setNombre("MULTIVERSO");
