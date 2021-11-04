@@ -37,10 +37,10 @@ public class Comic implements Serializable {
 	
 	@Id
 	@SequenceGenerator(allocationSize=1, name = "COMIC_SCID_GENERATOR",sequenceName="SEQ_COMIC")
-	@GeneratedValue(strategy= GenerationType.SEQUENCE,generator="COMIC:SCID_GENERATOR")
+	@GeneratedValue(strategy= GenerationType.SEQUENCE,generator="COMIC_SCID_GENERATOR")
 	@Column(name="SCID")
 	
-	
+
 	private Long id;
 	
 	@Column(name="SCNOMBRE")
@@ -69,11 +69,12 @@ public class Comic implements Serializable {
 	@Column(name="SCCOLOR")
 	private Boolean color;
 	
-	@Column(name="SCFECHAVENTA")
+	@Column(name="SCFECHA_VENTA")
 	private LocalDate fechaVenta;
 	
 	@Column(name="SCESTADO")
-	private EstadoEnum estado;
+	@Enumerated(value= EnumType.STRING)
+	private EstadoEnum estadoEnum;
 	
 	@Column(name="SCCANTIDAD")
 	private Short cantidad;
@@ -212,15 +213,15 @@ public class Comic implements Serializable {
 	 * Metodo encargado de retornar el valor del atributo estado
 	 * @return El estado asociado a la clase
 	 */
-	public EstadoEnum getEstado() {
-		return estado;
+	public EstadoEnum getEstadoEnum() {
+		return estadoEnum;
 	}
 	/**
 	 * Metodo encargado de modificar el valor del atributo estado
 	 * @param estado El nuevo estado a modificar.
 	 */
-	public void setEstado(EstadoEnum estado) {
-		this.estado = estado;
+	public void setEstadoEnum(EstadoEnum EstadoEnum) {
+		this.estadoEnum = EstadoEnum;
 	}
 	/**
 	 * Metodo encargado de retornar el valor del atributo cantidad
@@ -272,7 +273,7 @@ public class Comic implements Serializable {
 	public String toString() {
 		return "Comic [id=" + id + ", nombre=" + nombre + ", editorial=" + editorial + ", tematicaEnum=" + tematicaEnum
 				+ ", coleccion=" + coleccion + ", numeroPaginas=" + numeroPaginas + ", precio=" + precio + ", autores="
-				+ autores + ", color=" + color + ", fechaVenta=" + fechaVenta + ", estado=" + estado + ", cantidad="
+				+ autores + ", color=" + color + ", fechaVenta=" + fechaVenta + ", estado=" + estadoEnum + ", cantidad="
 				+ cantidad + "]";
 	}
 
